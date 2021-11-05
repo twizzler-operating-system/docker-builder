@@ -50,7 +50,7 @@ RUN apt-get update && apt-get -y install build-essential cmake xorriso mtools li
 RUN apt-get update && apt-get -y install python3.8 python3-distutils gcc-multilib zlib1g zlib1g-dev llvm llvm-dev grub2-common
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 
-RUN apt-get -y install rustc cargo
+RUN apt-get update && apt-get -y install rustc cargo
 
 RUN apt-get update && apt-get -y install graphviz global doxygen
 
